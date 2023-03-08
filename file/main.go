@@ -53,3 +53,10 @@ func Main() {
 	fmt.Println("filePerm:", fileInfo.Mode().Perm())
 	// filePerm: -rw-r--r--
 }
+
+func HandleErr(err error) {
+	if err != nil {
+		fmt.Println("err", err)
+		return
+	}
+}

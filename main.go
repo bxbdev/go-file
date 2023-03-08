@@ -1,7 +1,7 @@
 package main
 
 import (
-	// "fmt"
+	"fmt"
 	"go-file/file"
 	// "os"
 )
@@ -47,16 +47,32 @@ func main() {
 	// 需要注意此指令是完全刪除檔案和目錄，需要特別小心
 	// file.ForceDelete("../go-file/assets")
 
-	// story := "../go-file/file/story2.txt"
+	// story2 := "../go-file/file/story2.txt"
 	// test := "../go-file/assets/docs/test.txt"
-	ab := "../go-file/assets/docs/ab.txt"
+	// ab := "../go-file/assets/docs/ab.txt"
 	// 開啟檔案 ReadOnly
-	// file.OpenFile("../go-file/file/story2.txt")
-	// file.ReadFile(story)
-	// file.ReadFile(story)
+	// file.OpenFile(story2)
+	// file.ReadFile(story2)
 
 	// 開啟檔案 ReadWrite
 	// file.OpenFileWrite(file1)
-	file.WriteFile(ab, &[]byte{}, "Hello World")
+	// file.WriteFile(ab, &[]byte{}, "Hello World")
 
+	// 複製文件
+	// srcFile := "../go-file/file/story.txt"
+	// destFile := "story_gpt.txt"
+
+	// total, _ := file.CopyFile(srcFile, destFile)
+	// fmt.Println(total)
+
+	// 複製圖片
+	srcImg := "../go-file/assets/images/andy-holmes-LUpDjlJv4_c-unsplash.jpg"
+	destImg := "star.jpg"
+
+	// cp, err := file.CpyFile(srcImg, destImg)
+	// cp, err := file.IoutilCpyFile(srcImg, destImg)
+	cp, err := file.CpFile(srcImg, destImg)
+	file.HandleErr(err)
+	fmt.Println(cp)
+	fmt.Println("檔案複製完成")
 }

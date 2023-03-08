@@ -45,10 +45,3 @@ func WriteFile(f string, b *[]byte, s string) {
 	fmt.Println(stb)
 	HandleErr(err)
 }
-
-func HandleErr(err error) {
-	if err != nil {
-		fmt.Println("err", err)
-		return
-	}
-}
