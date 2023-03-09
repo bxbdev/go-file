@@ -1,10 +1,8 @@
 package main
 
-import (
-	"fmt"
-	"go-file/file"
-	// "os"
-)
+import "go-file/file"
+
+// "os"
 
 func main() {
 	// 檔案資訊
@@ -66,13 +64,32 @@ func main() {
 	// fmt.Println(total)
 
 	// 複製圖片
-	srcImg := "../go-file/assets/images/andy-holmes-LUpDjlJv4_c-unsplash.jpg"
-	destImg := "star.jpg"
+	// srcImg := "../go-file/assets/images/andy-holmes-LUpDjlJv4_c-unsplash.jpg"
+	// destImg := "star.jpg"
 
 	// cp, err := file.CpyFile(srcImg, destImg)
 	// cp, err := file.IoutilCpyFile(srcImg, destImg)
-	cp, err := file.CpFile(srcImg, destImg)
-	file.HandleErr(err)
-	fmt.Println(cp)
-	fmt.Println("檔案複製完成")
+	// cp, err := file.CpFile(srcImg, destImg)
+	// file.HandleErr(err)
+	// fmt.Println(cp)
+	// fmt.Println("檔案複製完成")
+
+	// 使用緩衝功能將內容複製到目標檔案
+	// file.Bufio(ab, "Buy a milk")
+
+	// ioutil讀取檔案
+	// file.IoutilRead(test)
+
+	// ioutil寫入檔案
+	// str := "風花雪月，雲淡風清"
+	// cc := "../go-file/assets/docs/cc.txt"
+	// file.IoutilWrite(cc, str)
+
+	// ioutil取讀所有內容
+	// str := "New research shows that coffee may have health benefits. Drinking moderate amounts of coffee could reduce the risk of heart disease."
+	// file.IoutilReadAll(str)
+
+	// ioutil讀取資料夾
+	folder := "../go-file"
+	file.IoutilReadDir(folder)
 }

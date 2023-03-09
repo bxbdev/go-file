@@ -1,3 +1,5 @@
-ABCDEFabcd
-Hello World
+Eat an apple
 New content
+Drink coffee
+Buy red beans
+Buy a milk
