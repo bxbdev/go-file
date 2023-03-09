@@ -90,6 +90,9 @@ func main() {
 	// file.IoutilReadAll(str)
 
 	// ioutil讀取資料夾
-	folder := "../go-file"
-	file.IoutilReadDir(folder)
+	folder := "."
+	// file.IoutilReadDir(folder)
+
+	// Show list files
+	file.ListFiles(folder, 0)
 }

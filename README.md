@@ -14,3 +14,5 @@ Practice Golang about file methods
 [千锋Go语言进阶教程：第10节_bufio包](https://www.youtube.com/watch?v=VGGDpvQRKRs&list=PLyNv7ro988uMXpehAbZ-r-sXHtrMGgAcD&index=10)
 
 [千锋Go语言进阶教程：第11节_ioutil包](https://www.youtube.com/watch?v=_Wsy_GQtNHw&list=PLyNv7ro988uMXpehAbZ-r-sXHtrMGgAcD&index=11)
+
+[千锋Go语言进阶教程：第12节_遍历文件夹](https://www.youtube.com/watch?v=xDBT_gdpVX4&list=PLyNv7ro988uMXpehAbZ-r-sXHtrMGgAcD&index=12)
